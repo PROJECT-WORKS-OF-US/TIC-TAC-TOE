@@ -1,0 +1,121 @@
+body {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    
+}
+
+.heading {
+    color: #ff0000;
+    margin-bottom: 20px;
+    font-size: 3rem;
+    font-weight: bold;
+    align-items: center;
+}
+.ch {
+    color: #000000;
+    font-weight: bold;
+    align-items: center;
+}
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 10px;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    background-image: radial-gradient(circle, rgb(255, 255, 255), rgb(255, 255, 0), rgb(142, 255, 142));
+    display: flex;
+    border: 2px solid black;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #000000;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+#status {
+    margin: 20px;
+    font-size: 1.4rem;
+    color: #0026ff;
+    font-weight: bold;
+    
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: #ff2600;
+    color: white;
+    border: 1px solid black;
+    border-radius: 10px;
+    text-align: center;
+}
+
+button:hover {
+    background-color: #cc0707;
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+#symbolSelection {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    font-size: 1.3rem;
+}
+
+#symbolSelection button {
+    margin: 5px;
+}
+.popup-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    color: #333;
+}
+
+#popupMessage {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #ff0000;
+    font-weight: bold;
+}
+
+#closePopup {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #32cd32;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#closePopup:hover {
+    background-color: #008100;
+}
